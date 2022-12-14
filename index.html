@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/12b63fb8ba.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/log.png" class="logo" style="width:130px" height="40px">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Software Engineer</p>
+                <h1>Hi, I'm <span>Rajat Suthar</span></h1>
+            </div>
+        </div>
+    </div>
+<!-- -----------------about---------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/lap.png ">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Strong in software development with intuittive problem solving skills. Passionate about implementing and launcing new projects. Looking to start the career as an entry-level software engineer with a reputed firm driven by technology.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('achievments')">Achievments</p>
+                    </div>  
+                    
+                    <div class="tab-contains active-tab" id="skills">
+                        <ul>
+                            <li>java</li>
+                            <li>SpringBoot(MVC)</li>
+                            <li>python</li>
+                            <li>java Script</li>
+                            <li>React</li>
+                            <li>HTML & CSS</li>
+                            <li>Data Structure and Algos</li>
+                            <li>MySql Database</li>
+                            <li>Node JS</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contains" id="experience">
+                        <ul>
+                            <li><span>May 2018-Jun 2018 (INTERN)</span><br>OYS Infotel<br>Jaipur,Rajasthan <br>Worked on online appointment booking system project.
+                                That is used by private clinic doctors to manage appointments and prescribe medicines.
+                                Worked on prescription management where the prescriptions are uploaded on S3 and patient can get the prescription using link sent via email.<br>
+                                Technology Used : Java, Spring(Boot), AWS(S3), mysql, git</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contains" id="education">
+                        <ul>
+                           <li><span>2020</span><br>B.Tech Computer Science<br>GITS,Udaipur,Rajasthan</li>
+                           <li><span>2015</span><br>Senior Secondary <br>New building Sirohi,Rajasthan</li>
+                           <li><span>2013</span><br> Secondary <br>A.V.M Sirohi,Rajasthan</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contains" id="achievments">
+                        <ul>
+                            <li>1) Certification in Python by coursera offered by google</li>
+                            <li>2) Got selected as Internshala Student Partner(ISP) to represent GITS college</li>
+                            <li>3) Inspire Award by Government Of Rajasthan</li>
+                            <li>4) Represented Rajasthan state in national level science fair</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- --------------------services--------------------->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Services</h1>
+        <div class="services-list"> 
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Backend development</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, est? Odio natus voluptate inventore.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Web development</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, est? Odio natus voluptate inventore.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, est? Odio natus voluptate inventore.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- ------------------------portfolio-------------------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Face Recognition</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur labore laudantium illo fugiat ex perferendis!</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Flipkart Clone</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur labore laudantium illo fugiat ex perferendis!</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work"> 
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Syntax Validator</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur labore laudantium illo fugiat ex perferendis!</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <a href="#" class="btn">See More</a>
+
+    </div>
+</div>
+
+<!-- --------------------contact------------------------------------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> rajatsuthar76@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 8209252616</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/rajatsuthar" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/rajat-suthar-b1a002159/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://leetcode.com/rajatsuthar97/" target="_blank"><i class="fa-solid fa-code"></i></a>
+                </div>
+
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form> 
+                    <input type="text" name="Nmae" placeholder="Your Name" required>
+                    <input type="email" name="email"placeholder="Your Email"required>
+                    <textarea name="Message"rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="coppyright">
+        <p>Copyright © rajat</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<script>
+    
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontains = document.getElementsByClassName("tab-contains");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontain of tabcontains){
+            tabcontain.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+</script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right ="0";
+    }
+
+    function closemenu(){
+        sidemeu.style.right ="-200px";
+    }
+</script>
+
+
+</body>
+</html>
